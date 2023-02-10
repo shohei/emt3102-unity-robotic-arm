@@ -19,4 +19,8 @@
 ## step6
 6DOF inverse kinematics (numerical method)
 
+## step7 (WIP)
+6DOF inverse kinematics (numerical method)
+
+With angle limit
 
