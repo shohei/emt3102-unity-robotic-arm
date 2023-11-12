@@ -29,8 +29,8 @@ namespace InverseKinematics
             for(int i=0;i<joint.Length; i++){
                 slider[i] = GameObject.Find("Slider_"+i.ToString());
                 sliderVal[i] = slider[i].GetComponent<Slider>().value;
-                angText[i] = GameObject.Find("Ref_"+i.ToString());
-                posText[i] = GameObject.Find("Ang_"+i.ToString());
+                posText[i] = GameObject.Find("Ref_"+i.ToString());
+                angText[i] = GameObject.Find("Ang_"+i.ToString());
             }
         
         }
@@ -52,8 +52,8 @@ namespace InverseKinematics
                 joint[i].transform.localEulerAngles = angle[i]*Mathf.Rad2Deg;
                 posText[i].GetComponent<TMPro.TextMeshProUGUI>().text = sliderVal[i].ToString("f2");
             }
-            angText[0].GetComponent<TMPro.TextMeshProUGUI>().text = (angle[0].z * Mathf.Rad2Deg).ToString("2");
-            angText[1].GetComponent<TMPro.TextMeshProUGUI>().text = (angle[1].z * Mathf.Rad2Deg).ToString("2");
+            angText[0].GetComponent<TMPro.TextMeshProUGUI>().text = (angle[0].z * Mathf.Rad2Deg).ToString("f2");
+            angText[1].GetComponent<TMPro.TextMeshProUGUI>().text = (angle[1].z * Mathf.Rad2Deg).ToString("f2");
         }
     }
 }

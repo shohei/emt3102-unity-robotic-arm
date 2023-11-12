@@ -51,7 +51,6 @@ namespace InverseKinematics
                       + armL[1] * Mathf.Sin((angle[0].z + angle[1].z)* Mathf.Deg2Rad);
             posText[0].GetComponent<TMPro.TextMeshProUGUI>().text = px.ToString("f2");
             posText[1].GetComponent<TMPro.TextMeshProUGUI>().text = py.ToString("f2");
-
         }
     }
 }
